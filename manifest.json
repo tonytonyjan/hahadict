@@ -1,6 +1,6 @@
 {
   "name": "笑典",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "manifest_version": 2,
   "description": "教育部重編國語辭典 Chrome 離線版",
   "permissions": [
