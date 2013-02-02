@@ -2,8 +2,7 @@
   "name": "HahaDict",
   "version": "0.5.0",
   "manifest_version": 2,
-  "description": "Haha Dictionary",
-  "icons": {},
+  "description": "教育部重編國語辭典 Chrome 離線版",
   "permissions": [
     "<all_urls>",
     "contextMenus",
