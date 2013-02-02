@@ -1,7 +1,7 @@
 function to_html(entry, heteronyms){
   var html = '<div class="well"><div class="page-header"><h1>'+entry+'</h1></div>';
   for(var i in heteronyms){
-    html += '<h2 class="muted">'+i+'</h2>';
+    html += '<h2 class="muted" style="text-rendering: optimizeSpeed">'+i+'</h2>';
     html += '<ul>';
     for(var j in heteronyms[i])
       html += '<li>'+heteronyms[i][j]+'</li>'
