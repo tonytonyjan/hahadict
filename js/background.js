@@ -5,6 +5,8 @@ $.ajax({
   dataType: 'json'
 }).done(function(data, status){
   DICT = data;
+  DICT['笑典'] = {};
+  DICT['笑典']['ㄒ｜ㄠˋ　ㄉ｜ㄢˇ'] = ['教育部重編國語辭典 Chrome 離線版，由 <a href="http://www.plurk.com/tonytonyjan" target="_blank">tonytonyjan</a> 在 <a href="http://3du.tw" target="_blank">3du.tw</a> 黑客松時所製作的玩具。'];
   console.log("dict loaded.")
 }).fail(function(data, status){
   console.log(status);

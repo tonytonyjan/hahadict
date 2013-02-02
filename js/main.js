@@ -33,7 +33,6 @@ $(function(){
 
 chrome.runtime.getBackgroundPage(function(bg){
   $(function(){
-    // control
     var ans;
     $('#query').autocomplete({
       source: function(request, response){
@@ -45,6 +44,7 @@ chrome.runtime.getBackgroundPage(function(bg){
         for(var i in ans)
           if(i.indexOf(ui.item.value) == 0)
             obj[i] = ans[i];
+        location.hash = ui.item.value
         show(obj);
       },
       response: function(e, ui){
@@ -58,7 +58,7 @@ chrome.runtime.getBackgroundPage(function(bg){
         show(obj);
       },
     });
-
+    if(location.hash.substr(1) == '') location.hash = '笑典';
     $('#query').autocomplete("search", location.hash.substr(1)).autocomplete("close");
   });
 });
